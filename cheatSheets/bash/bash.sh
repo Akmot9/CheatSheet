@@ -24,3 +24,40 @@ echo $(($X + $Y))
 echo $(($X - $Y))
 echo $(($X * $Y))
 echo $(($X / $Y))
+
+################# else if statment  ###############
+read X
+read Y
+
+if [ $X -gt $Y ]
+then
+    echo "X is greater than Y"
+
+elif [ $X -lt $Y ]
+then
+    echo "X is less than Y"
+
+elif [ $X == $Y ]
+then
+    echo "X is equal to Y"
+
+else
+    echo "pas ouf..."
+
+fi
+
+## Y or y
+read X
+
+if [ $X == "y" ] || [ $X == "Y" ] ## Y or y
+then
+    echo "YES"
+
+elif [ $X == "n" ] || [ $X == "N" ]
+then
+    echo "NO"
+
+else
+    echo "pas ouf..."
+
+fi
